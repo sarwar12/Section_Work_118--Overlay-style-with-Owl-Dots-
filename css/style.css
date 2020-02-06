@@ -1,0 +1,153 @@
+/* Main CSS Start */
+*{
+	margin: 0;
+	padding: 0;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+body{
+	font-family: sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0 0 15px;
+	font-weight: 700;
+}
+a:focus, input:focus, teaxarea:focus, button:focus{outline: 0 solid;}
+a:hover{
+	text-decoration: none;
+}
+.section-padding{padding: 50px 0;}
+/* Main CSS Stop */
+/* === Overlay Section CSS Start === */
+
+.section-title h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+}
+.bordered-icon-wrap {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  color: #ffce46;
+  font-size: 30px;
+}
+.bordered-icon-wrap:before, .bordered-icon-wrap:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 2px;
+  background: #ffce46;
+  margin-top: -1px;
+}
+.bordered-icon-wrap:before {
+  left: -70px;
+}
+.bordered-icon-wrap:after {
+  right: -70px;
+}
+	/* portfolio-area code */
+.portfolio-bg-1{background-image: url(../img/bg-1.jpg);}
+.portfolio-bg-2{background-image: url(../img/bg-2.jpg);}
+.portfolio-bg-3{background-image: url(../img/bg-3.jpg);}
+.portfolio-bg-4{background-image: url(../img/bg-4.jpg);}
+.portfolio-bg-5{background-image: url(../img/bg-5.jpg);}
+.portfolio-area .container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
+.portfolio-items {
+  /* overflow: hidden; */ /* owl carousel working this code remove*/
+}
+.single-portfolio-items {
+  /* float: left;
+  width: 20%; */   /* owl carousel working this code remove*/
+  height: 280px;
+  background-color: #ddd;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.portfolio-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #ffce46;
+  font-style: italic;
+  padding: 20px;
+  transition: .3s;
+}
+.portfolio-text h4 {
+  color: #fff;
+  font-style: normal;
+  margin: 0;
+}
+.portfolio-hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: table;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+.portfolio-hover-tablecell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.portfolio-hover-tablecell a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: #159cf6;
+  color: #fff;
+  line-height: 40px;
+  border-radius: 50%;
+}
+.portfolio-hover-tablecell a.blue-bg {
+  background-color: #ffce46;
+}
+.portfolio-hover-tablecell:after {
+  content: "";
+  animation: ;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #ddd;
+  opacity: .5;
+  z-index: -1;
+}
+.single-portfolio-items:hover .portfolio-text {
+  opacity: 0;
+  visibility: hidden;
+}
+.single-portfolio-items:hover .portfolio-hover {
+  opacity: 1;
+  visibility: visible;
+}
+	/* Owl carousel CSS*/	
+.portfolio-items.owl-carousel .owl-dots button {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background: #000;
+  margin: 4px;
+  border-radius: 50%;
+}
+.portfolio-items.owl-carousel .owl-dots button.active {
+  background-color: lightsalmon;
+}
+.portfolio-items.owl-carousel .owl-dots {
+  text-align: center;
+}
+/* === Overlay Section CSS Stop === */
